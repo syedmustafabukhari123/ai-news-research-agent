@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.venv/
+.tmp-pip/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+reports/*.md
+reports/*.audit.json
+logs/

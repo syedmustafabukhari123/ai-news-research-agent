@@ -1,0 +1,4 @@
+# Review the virtualenv path and lock path before installing with crontab -e.
+# Run every day at 09:00 Asia/Karachi. Cron otherwise uses the host timezone.
+CRON_TZ=Asia/Karachi
+0 9 * * * PYTHON_BIN=/absolute/path/to/ai-news-agent/.venv/bin/python LOCK_FILE=/absolute/path/to/ai-news-agent/logs/cron.lock /absolute/path/to/ai-news-agent/scheduler/run_daily.sh >> /absolute/path/to/ai-news-agent/logs/cron-console.log 2>&1
